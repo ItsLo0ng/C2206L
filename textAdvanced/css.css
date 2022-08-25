@@ -1,0 +1,40 @@
+.heading{
+    text-decoration: underline;
+    font: arial;
+    font-size: x-large;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+h1{
+    font-size: 20px
+}
+.heading h1::first-letter{
+    font-size: larger;
+}
+
+.general{
+    font-style: italic;
+    text-align: center;
+
+}
+
+.places{
+    text-decoration: underline;
+    font: cursive;
+    font-size: medium;
+
+}
+
+.places ::first-letter{
+    text-transform: uppercase;
+}
+
+ul {
+    font-size: small;
+    font: verdana;
+}
+
+*{
+    font-size: 15px;
+}
