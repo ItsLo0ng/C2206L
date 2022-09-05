@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTB2</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function ptb2(x,y,z){
+            var x1,x2;
+            var x,y,z,delta;
+            x= parseInt(x);
+            y= parseInt(y);
+            z= parseInt(z);
+            delta=(y*y-4*x*z)
+            if(delta ==0){
+             alert("phuong trinh co nghiem kep");
+             x1=-y/(2*x) ;
+             x2=-y/(2*x);
+             form.x.value=eval(x1);
+             form.y.value=eval(x2);
+            }
+            else if(delta<0){
+             alert("phuong trinh vo nghiem");
+            } 
+            else{
+             alert("phuong trinh co hai nghiem");
+             x1=(-y-Math.sqrt(delta))/(2*x);
+             x2=(-y+Math.sqrt(delta))/(2*x);
+             form.x.value=eval(x1);
+             form.y.value=eval(x2);
+            }
+        }
+        x = prompt("nhap a",1);
+        y = prompt("nhap b",1);
+        z = prompt("nhap c",1);
+        ptb2(x,y,z)
+    </script>
+</body>
+</html>

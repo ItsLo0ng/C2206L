@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taomaytinh</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function cong(n,m){
+            n = parseFloat(n);
+            m = parseFloat(m);
+            alert(n+m)
+        }
+        function tru(n,m){
+            alert(n-m)
+        }
+        function nhan(n,m){
+            alert(n*m)
+        }
+        function chia(n,m){
+            alert(n/m)
+        }
+        a = prompt('nhap a: ',0)
+        op = prompt('nhap operator: ')
+        b = prompt('nhap b: ',0)
+        switch (op){
+            case '+':
+                cong(a,b);
+                break;
+            case '-':
+                tru(a,b)
+                break;
+            case '*':
+                nhan(a,b)
+                break;
+            case '/':
+                chia(a,b)
+                break;
+        }
+    </script>
+</body>
+</html>
