@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <button onclick="click1()">Nhap A</button>
+        <button onclick="click2()">Nhap B</button>
+        <button onclick="click3()">In ket qua</button>
+    </div>
+    <script>
+        var A=0,B=0
+        function click1() {
+            A = prompt("Nhap A",0);
+        }
+        function click2() {
+            B = prompt("Nhap B",0);
+        }
+        function click3() {
+            alert(`tong cua A va B la ${parseInt(A)+parseInt(B)}`)
+        }
+    </script>
+</body>
+</html>

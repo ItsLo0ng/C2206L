@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        n = prompt('nhap N',0)
+        arr =[]
+        for(var i=0; i<n; i++){
+            arr[i] = prompt(`nhap phan tu thu ${i}`)
+        }
+        for(var i=0; i<arr.length; i++){
+            for(var j=i+1; j<arr.length; j++){
+                if(arr[i] > arr[j]){
+                    temp = arr[i]
+                    arr[i] = arr[j]
+                    arr[j] = temp
+                }
+            }
+        }
+        var tong =0
+        for(var i=0; i<arr.length; i++){
+            tong+= parseInt(arr[i]) 
+            alert(`phan tu thu ${i} la ${arr[i]}`)
+        }
+        alert(`tong cac phan tu trong mang la ${tong}`)
+    </script>
+</body>
+</html>
